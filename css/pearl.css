@@ -48,8 +48,8 @@ a {
 }
 
 .site-header {
-  position: absolute;
-  z-index: 10;
+position: fixed;
+	z-index: 10;
   top: 0;
   left: 50%;
   width: min(100% - 72px, var(--max));
@@ -583,19 +583,19 @@ a {
 }
 
 /* Desktop header logo. Mobile retains the existing text mark and layout. */
-.brand .desktop-logo {
+.logo .desktop-logo {
   display: none;
 }
 
 @media (min-width: 901px) {
-  .brand .desktop-logo {
+  .logo .desktop-logo {
     display: block;
     width: auto;
-    height: 28px;
+    height: 60px;
     object-fit: contain;
   }
 
-  .brand .mobile-logo-text {
+  .logo .mobile-logo-text {
     display: none;
   }
 }
@@ -768,4 +768,21 @@ a {
     z-index: 9999;
 }
 
+/* TEMP - Pearl Logo Test */
+.site-header .logo {
+  display: flex !important;
+  align-items: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.site-header .logo .desktop-logo {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: 60px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+}
 
