@@ -8,21 +8,22 @@
 <title>跟着小刘看房</title>
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/webp" href="assets/images/website-logo.webp">
+<script src="js/home.js?v=20260828" defer></script>
 
 </head>
 
-<body>
-<header>
+<body class="home-page">
+<header class="site-header">
 
     <div class="logo">
-
-        跟着小刘看房
-
+        <img class="desktop-logo" src="assets/images/website-logo.webp" alt="跟着小刘看房">
+        <span class="mobile-logo-text">跟着小刘看房</span>
     </div>
 
     <nav>
 
-        <a href="#">首页</a>
+        <a href="#" class="is-active" aria-current="page">首页</a>
 
         <a href="landed.html">Landed</a>
 
@@ -35,8 +36,6 @@
     </nav>
 
 </header>
-<body>
-
 <section class="hero">
 
     <video autoplay muted loop playsinline>
@@ -45,7 +44,7 @@
 
     </video>
 <div class="video-overlay"></div>
-    <div class="overlay">
+    <div class="overlay" data-hero-content>
 
         <h1>跟着小刘看房</h1>
 
@@ -60,15 +59,15 @@
     </div>
 
 </section>
-<section class="about">
+<section class="about" data-reveal-section>
 
-    <div class="about-image">
+    <div class="about-image" data-reveal="image">
 
         <img src="assets/images/shawn.webp" alt="小刘">
 
     </div>
 
-    <div class="about-content">
+    <div class="about-content" data-reveal="content">
 
         <h2>你好，我是小刘（Shawn）</h2>
 
@@ -91,9 +90,9 @@ class="about-btn">
     </div>
 
 </section>
-	<section class="project-category">
+	<section class="project-category" data-reveal-section>
 
-    <div class="section-title">
+    <div class="section-title" data-reveal="title">
 
         <h2>探索项目</h2>
 
@@ -103,7 +102,7 @@ class="about-btn">
 
     </div>
 
-    <div class="category-grid">
+    <div class="category-grid" data-reveal="cards">
 
         <a href="landed.html" class="category-card landed-card">
 
@@ -140,9 +139,9 @@ class="about-btn">
     </div>
 
 </section>
-	<section class="why-me">
+	<section class="why-me" data-reveal-section>
 
-    <div class="section-title">
+    <div class="section-title" data-reveal="title">
 
         <h2>为什么选择小刘？</h2>
 
@@ -152,7 +151,7 @@ class="about-btn">
 
     </div>
 
-    <div class="why-grid">
+    <div class="why-grid" data-reveal="cards">
 
         <div class="why-card">
             免费项目分析
@@ -181,9 +180,9 @@ class="about-btn">
     </div>
 
 </section>
-	<section class="cta-section">
+	<section class="cta-section" data-reveal-section>
 
-    <div class="cta-container">
+    <div class="cta-container" data-reveal="content">
 
         <h2>
             准备寻找理想家园？
@@ -203,8 +202,7 @@ class="about-btn">
     </div>
 
 </section>
-</body>
-
+	
 </body>
 
 </html>
