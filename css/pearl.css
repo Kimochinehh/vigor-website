@@ -1,0 +1,367 @@
+/* ========================================
+   Pearl Residence - Property Hero
+   ======================================== */
+
+.property-hero {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    min-height: 650px;
+    overflow: hidden;
+    background: #111;
+}
+
+/* Hero Image */
+.hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Black Gradient Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.55) 28%,
+        rgba(0, 0, 0, 0.18) 58%,
+        rgba(0, 0, 0, 0) 85%
+    );
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: min(1200px, 90%);
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: #fff;
+}
+
+/* Small Label */
+.hero-label {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    margin-bottom: 18px;
+    opacity: 0.9;
+}
+
+/* Main Title */
+.hero-content h1 {
+    margin: 0;
+    font-size: clamp(48px, 6vw, 88px);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    margin: 22px 0 0;
+    max-width: 520px;
+
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 300;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+/* Location */
+.hero-location {
+    margin-top: 28px;
+
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Price */
+.hero-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    margin-top: 14px;
+}
+
+.hero-price span {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.08em;
+}
+
+.hero-price strong {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Enquire Button */
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 32px;
+    padding: 13px 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 0.08em;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+}
+
+
+/* ========================================
+   Mobile
+   ======================================== */
+
+@media (max-width: 768px) {
+	
+	.floor-plan-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 0;
+    margin-top: 45px;
+}
+
+.floor-detail-item {
+    padding: 0 15px;
+}
+
+.floor-detail-item:nth-child(2)::after {
+    display: none;
+}
+
+.floor-detail-item img {
+    width: 36px;
+    height: 36px;
+}
+
+    .property-hero {
+        height: 78vh;
+        min-height: 580px;
+    }
+
+    .hero-image img {
+        object-position: 62% center;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.72) 0%,
+            rgba(0, 0, 0, 0.42) 60%,
+            rgba(0, 0, 0, 0.15) 100%
+        );
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+        max-width: 360px;
+    }
+}
+/* =========================================
+   Floor Plan
+========================================= */
+
+.floor-plan-section {
+    padding: 120px 8% 140px;
+    background: #f7f5f1;
+    text-align: center;
+}
+
+.floor-plan-header {
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.floor-plan-header .section-label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #777;
+}
+
+.floor-plan-header h2 {
+    margin: 0 0 18px;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #222;
+}
+
+.floor-plan-header p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #777;
+}
+
+/* Floor Buttons */
+
+.floor-plan-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 55px;
+}
+
+.floor-tab {
+    padding: 13px 28px;
+    border: 1px solid #c9c5bd;
+    background: transparent;
+    color: #555;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.floor-tab:hover {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+.floor-tab.active {
+    background: #222;
+    border-color: #222;
+    color: #fff;
+}
+
+/* Floor Plan Image */
+
+.floor-plan-display {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.floor-plan-image {
+    display: none;
+}
+
+.floor-plan-image.active {
+    display: block;
+    animation: floorPlanFade 0.45s ease forwards;
+}
+
+@keyframes floorPlanFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.floor-plan-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/* Floor Plan Details */
+
+.floor-plan-details {
+    max-width: 900px;
+    margin: 25px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.floor-detail-item {
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.floor-detail-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 90%;
+    width: 1px;
+    background: #d8d2c9;
+}
+
+.floor-detail-item img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 0;
+	transform: translateY(-5px);
+}
+
+.floor-detail-label {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    margin-top: -15px;
+}
+
+.floor-detail-item img[src*="mianji"] {
+    width: 125px;
+    height: 125px;
+}
+
+.floor-detail-item img[src*="bedroom"] {
+    width: 125px;
+    height: 125px;
+}
+
+.floor-detail-item strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -40,6 +40,140 @@
     </nav>
 
 </header>
+	
+	<!-- Property Hero -->
+<section class="property-hero">
 
+    <div class="hero-image">
+        <img src="assets/images/pearl-hero.webp" alt="Pearl Residence">
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">PEARL RESIDENCE</span>
+
+        <h1>Modern Living</h1>
+
+        <p class="hero-subtitle">
+            A Contemporary Home in Johor Bahru
+        </p>
+
+        <div class="hero-location">
+            📍 Johor Bahru
+        </div>
+
+        <div class="hero-price">
+            <span>From</span>
+            <strong>RM 8XX,XXX</strong>
+        </div>
+
+        <a href="https://wa.me/60169930295" 
+           target="_blank" 
+           class="hero-button">
+            Enquire Now
+        </a>
+
+    </div>
+
+</section>
+<!-- Floor Plan -->
+<section class="floor-plan-section">
+
+    <div class="floor-plan-header">
+        <span class="section-label">FLOOR PLAN</span>
+        <h2>Explore The Layout</h2>
+        <p>
+            Discover the thoughtful layout across both floors.
+        </p>
+    </div>
+
+    <div class="floor-plan-tabs">
+        <button class="floor-tab active" data-floor="ground">
+            Ground Floor
+        </button>
+
+        <button class="floor-tab" data-floor="second">
+            Second Floor
+        </button>
+    </div>
+
+    <div class="floor-plan-display">
+
+        <div class="floor-plan-image active" id="ground-floor">
+            <img
+                src="assets/images/pearl-GL.webp"
+                alt="Pearl Residence Ground Floor Plan"
+            >
+        </div>
+
+        <div class="floor-plan-image" id="second-floor">
+            <img
+                src="assets/images/pearl-FL.webp"
+                alt="Pearl Residence Second Floor Plan"
+            >
+        </div>
+    </div>
+</section>
+	<div class="floor-plan-details">
+
+    <div class="floor-detail-item">
+        <img src="assets/images/mianji.png" alt="Built-up Area">
+        <span class="floor-detail-label">Built-up</span>
+        <strong>1,759 sq.ft.</strong>
+    </div>
+
+    <div class="floor-detail-item">
+        <img src="assets/images/bedroom.png" alt="Bedrooms">
+        <span class="floor-detail-label">Bedrooms</span>
+        <strong>4</strong>
+    </div>
+
+    <div class="floor-detail-item">
+        <img src="assets/images/bathroom.png" alt="Bathrooms">
+        <span class="floor-detail-label">Bathrooms</span>
+        <strong>4</strong>
+    </div>
+
+    <div class="floor-detail-item">
+        <img src="assets/images/carpark.png" alt="Car Parks">
+        <span class="floor-detail-label">Car Parks</span>
+        <strong>2</strong>
+    </div>
+
+</div>
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".floor-tab");
+    const floorPlans = document.querySelectorAll(".floor-plan-image");
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const selectedFloor = this.dataset.floor;
+
+            tabs.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            floorPlans.forEach(function (plan) {
+                plan.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            document
+                .getElementById(selectedFloor + "-floor")
+                .classList.add("active");
+
+        });
+
+    });
+
+});
+</script>
 </body>
 </html>
