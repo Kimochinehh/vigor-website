@@ -349,19 +349,15 @@
     margin-top: -15px;
 }
 
-.floor-detail-item img[src*="mianji"] {
-    width: 125px;
-    height: 125px;
-}
 
-.floor-detail-item img[src*="bedroom"] {
-    width: 125px;
-    height: 125px;
-}
 
 .floor-detail-item strong {
     display: block;
     font-size: 17px;
     font-weight: 400;
     color: #333;
+}
+
+.floor-plan-details .floor-detail-item strong {
+    color: #9E836A;
 }
