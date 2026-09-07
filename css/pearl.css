@@ -200,6 +200,85 @@
         max-width: 360px;
     }
 }
+
+/* Property Highlights */
+.property-highlights {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 55px 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.highlights-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.highlights-intro .section-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #999;
+}
+
+.highlights-intro h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #222;
+}
+
+.highlights-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #888;
+}
+
+.highlights-intro {
+    grid-column: 1 / -1;
+}
+
+.highlight-item {
+    position: relative;
+    padding: 0 30px;
+}
+
+.highlight-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background: #d8d2c9;
+}
+
+.highlight-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.highlight-item span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 32px;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: #777;
+    text-align: center;
+}
+
 /* =========================================
    Floor Plan
 ========================================= */
