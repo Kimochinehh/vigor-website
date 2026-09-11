@@ -440,3 +440,713 @@
 .floor-plan-details .floor-detail-item strong {
     color: #9E836A;
 }
+
+/* ================================
+   THE SPACE
+================================ */
+
+.the-space {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 110px 40px 100px;
+    background: #f8f7f4;
+}
+
+.space-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.space-heading > span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #a9896b;
+    margin-bottom: 18px;
+}
+
+.space-heading h2 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.space-heading p {
+    margin: 18px 0 0;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+
+/* Main layout */
+
+.space-main {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.space-image img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    display: block;
+}
+
+.space-content {
+    padding-right: 15px;
+}
+
+.space-content > p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #666;
+    margin: 0 0 45px;
+}
+
+
+/* Features */
+
+.space-features {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.space-feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.space-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border: 1px solid #d8c9b9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #a9896b;
+}
+
+.space-feature h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.space-feature p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #999;
+}
+
+
+/* Gallery */
+
+.space-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 80px;
+}
+
+.gallery-large img,
+.gallery-small img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-large img {
+    height: 430px;
+}
+
+.gallery-small {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+}
+
+.gallery-small img {
+    height: 209px;
+}
+
+/* ================================
+   DESIGNED FOR
+================================ */
+
+.designed-for {
+    max-width: 1050px;
+    margin: 75px auto 25px;
+    text-align: center;
+}
+
+.designed-for-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a9896b;
+    margin-bottom: 35px;
+}
+
+.designed-for-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.designed-for-item {
+    padding: 0 28px;
+    border-right: 1px solid #ded9d2;
+}
+
+.designed-for-item:last-child {
+    border-right: none;
+}
+
+.designed-number {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #b9a18a;
+    margin-bottom: 14px;
+}
+
+.designed-for-item h3 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #444;
+}
+
+.designed-for-item p {
+    margin: 0 auto;
+    max-width: 180px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #999;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .designed-for {
+        margin: 55px auto 60px;
+    }
+
+    .designed-for-label {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+        line-height: 1.6;
+        margin-bottom: 28px;
+    }
+
+    .designed-for-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 35px;
+    }
+
+    .designed-for-item {
+        padding: 0 15px;
+    }
+
+    .designed-for-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .designed-for-item:nth-child(3),
+    .designed-for-item:nth-child(4) {
+        border-top: 1px solid #ded9d2;
+        padding-top: 30px;
+    }
+
+    .designed-number {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+
+    .designed-for-item h3 {
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+
+    .designed-for-item p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+}
+/* Bottom statement */
+
+.space-bottom {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.space-bottom span {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a9896b;
+}
+
+.space-bottom p {
+    margin: 15px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .the-space {
+        padding: 75px 20px 70px;
+    }
+
+    .space-heading {
+        margin-bottom: 40px;
+    }
+
+    .space-heading > span {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 14px;
+    }
+
+    .space-heading h2 {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .space-heading p {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        line-height: 1.6;
+        margin-top: 15px;
+    }
+
+
+    /* Image first on mobile */
+
+    .space-main {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .space-image {
+        width: 100%;
+    }
+
+    .space-image img {
+        width: 100%;
+        height: 360px;
+    }
+
+    .space-content {
+        padding-right: 0;
+    }
+
+    .space-content > p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 35px;
+    }
+
+
+    /* Features become 3 columns */
+
+    .space-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .space-feature {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .space-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 18px;
+    }
+
+    .space-feature h3 {
+        font-size: 11px;
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+    }
+
+    .space-feature p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* Mobile gallery */
+
+    .space-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 50px;
+    }
+
+    .gallery-large img {
+        height: 300px;
+    }
+
+    .gallery-small {
+        gap: 8px;
+    }
+
+    .gallery-small img {
+        height: 146px;
+    }
+
+
+    .space-bottom {
+        margin-top: 55px;
+    }
+
+    .space-bottom span {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .space-bottom p {
+        font-size: 12px;
+    }
+}
+
+/* ================================
+   THE LIFESTYLE
+================================ */
+
+.the-lifestyle {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px 105px;
+    background: #f8f7f4;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.lifestyle-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 70px;
+}
+
+.lifestyle-heading > span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #a9896b;
+    margin-bottom: 20px;
+}
+
+.lifestyle-heading h2 {
+    margin: 0;
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.lifestyle-tagline {
+    margin: 22px 0 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #a9896b;
+}
+
+.lifestyle-intro {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #777;
+}
+
+
+/* ================================
+   THREE CARDS
+================================ */
+
+.lifestyle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* Card */
+
+.lifestyle-card {
+    position: relative;
+}
+
+
+/* Image */
+
+.lifestyle-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lifestyle-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+
+/* Subtle hover */
+
+.lifestyle-card:hover .lifestyle-image img {
+    transform: scale(1.03);
+}
+
+
+/* ================================
+   CARD INFORMATION
+================================ */
+
+.lifestyle-card-info {
+    position: relative;
+    padding: 22px 5px 0;
+}
+
+
+/* Number */
+
+.lifestyle-number {
+    position: absolute;
+    top: 22px;
+    right: 5px;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #a9896b;
+}
+
+
+/* Small decorative line */
+
+.lifestyle-card-info::before {
+    content: "";
+    display: block;
+
+    width: 1px;
+    height: 28px;
+
+    background: #a9896b;
+
+    position: absolute;
+    left: 5px;
+    top: -14px;
+}
+
+
+/* Title */
+
+.lifestyle-card-info h3 {
+    margin: 0 35px 8px 0;
+
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+
+/* Description */
+
+.lifestyle-card-info p {
+    margin: 0;
+
+    max-width: 280px;
+
+    font-size: 13px;
+    line-height: 1.7;
+    color: #888;
+}
+
+
+/* ================================
+   BOTTOM STATEMENT
+================================ */
+
+.lifestyle-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 85px;
+}
+
+.lifestyle-bottom::before,
+.lifestyle-bottom::after {
+    content: "";
+
+    width: 80px;
+    height: 1px;
+
+    background: #cbb7a3;
+}
+
+.lifestyle-bottom span {
+    margin: 0 22px;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    color: #a9896b;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .the-lifestyle {
+        padding: 15px 20px 70px;
+    }
+
+
+    /* Heading */
+
+    .lifestyle-heading {
+        margin-bottom: 45px;
+    }
+
+    .lifestyle-heading > span {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .lifestyle-heading h2 {
+        font-size: 31px;
+        line-height: 1.25;
+    }
+
+    .lifestyle-tagline {
+        margin-top: 17px;
+
+        font-size: 9px;
+        letter-spacing: 2.5px;
+
+        line-height: 1.7;
+    }
+
+    .lifestyle-intro {
+        margin-top: 18px;
+
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
+    /* Cards become vertical */
+
+    .lifestyle-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+
+
+    /* Images */
+
+    .lifestyle-image img {
+        height: 260px;
+    }
+
+
+    /* Card info */
+
+    .lifestyle-card-info {
+        padding-top: 18px;
+    }
+
+    .lifestyle-card-info::before {
+        top: -12px;
+        height: 24px;
+    }
+
+    .lifestyle-card-info h3 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    .lifestyle-card-info p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+    /* Number */
+
+    .lifestyle-number {
+        top: 18px;
+        right: 3px;
+        font-size: 9px;
+    }
+
+
+    /* Bottom */
+
+    .lifestyle-bottom {
+        margin-top: 60px;
+    }
+
+    .lifestyle-bottom::before,
+    .lifestyle-bottom::after {
+        width: 35px;
+    }
+
+    .lifestyle-bottom span {
+        margin: 0 12px;
+
+        font-size: 8px;
+        letter-spacing: 2.5px;
+
+        text-align: center;
+    }
+
+}
